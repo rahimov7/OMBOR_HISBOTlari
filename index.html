@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="uz"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ombor — Boshqaruv tizimi</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<div class="app">
+<aside id="sb"></aside><div id="sc" onclick="drawer(0)"></div>
+<main>
+<header id="hdr">
+<button class="ib" id="burger" onclick="drawer(1)" aria-label="Menyu"></button>
+<div class="crumb" id="cr"></div><div class="sp" style="flex:1"></div>
+<label class="srch gs" style="margin:0;font-weight:400;min-width:220px"><span id="si"></span><input id="gs" placeholder="Qidirish..." aria-label="Qidirish"><kbd>⌘ K</kbd></label>
+<button class="ib" aria-label="Bildirishnomalar" onclick="toast('Yangi bildirishnomalar yo‘q')"><span id="bi"></span><i class="dot"></i></button>
+<div class="usr"><div class="av" id="av">A</div><div><b id="un"></b><small>Administrator</small></div></div>
+</header>
+<div id="pg"></div></main></div>
+<div id="md"><div id="mb"></div></div><div id="ts"></div>
+<script src="app.js"></script>
+</body></html>
